@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Nunes</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li>
+                    <a href="#sobre" class="navbar-link">Sobre Mim</a>
+                </li>
+
+                <li>
+                    <a href="#exp" class="navbar-link" >Experiências</a>
+                </li>
+
+                <li>
+                    <a href="#contatos" class="navbar-link" >Contatos</a>
+                </li>
+           </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div>
+                <h1 class="intro-titulo">Arthur Nunes</h1>
+                    <p class="intro-texto">
+                        Sou estudante de ciencia da computacao no terceiro
+                        semestre e hoje estou faezndo uma oficina de html css 
+                        com os brabos, Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Repellendus ullam, officia excepturi 
+                        iste, voluptatum corrupti ea voluptatibus itaque expedita 
+                        sapiente, non perspiciatis assumenda nostrum laudantium. Rerum, esse harum. Eveniet, cupiditate.
+                    </p>
+            </div>
+            <img 
+                src="img/terno.jpg" 
+                alt="Minha Foto"
+                class="foto"
+
+                >
+        </section>
+
+        <div class="divisor"></div>
+        
+        <section class="sobre" id="sobre">
+            <h1 class="sobre-titulo">Sobre Mim</h1>
+            <div class="sobre-conteudo" >
+                <img 
+                src="img/fantasia.jpg" 
+                alt="Minha Foto"
+                class="foto"
+                >
+              
+                <p class="sobre_texto">
+                    Sou estudante de ciencia da computacao no terceiro
+                    semestre e hoje estou faezndo uma oficina de html css 
+                    com os brabos, Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Repellendus ullam, officia excepturi 
+                    iste, voluptatum corrupti ea voluptatibus itaque expedita 
+                    sapiente, non perspiciatis assumenda nostrum laudantium. Rerum, esse harum. Eveniet, cupiditate.
+                </p>
+            </div>
+
+        </section>
+
+        <div class="divisor"></div>
+
+        <section class="exp" id="exp">
+            <h2 class="exp-titulo">Experiências</h2>
+                    <div class="exp-conteudo">
+                        <p class="exp-periodo">2024.02</p>
+                
+                        <div style="max-width: 36rem;">
+                            <h5 class="exp-func">
+                                Palestrante - <span class="exp-emp">IFPA</span>
+                            </h5>
+                            <p class="exp-descr">
+                                diz tal coisa com tal coisa e tal coisa
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Cupiditate fuga saepe quis error nihil iste quas ad consequuntur 
+                                distinctio ab esse a sapiente est repudiandae, ipsam corporis quasi 
+                                facilis dolores.
+                            </p>
+                            <div class="exp-tech-list">
+                                <span class="exp-tech-item">html</span>
+                                <span class="exp-tech-item">css</span>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <div class="divisor-3"></div>
+        <section class="contato" id="contatos">
+            <h2 class="contato-titulo">Contato</h2>
+
+            <a href="mailto:teste@gmail.com" class="contato-mail">teste@gmail.com</a>
+            <p class="contato-tel">+55 (91) 91283234</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Arthur Nunes
+    </footer>
+</body>
+</html>
+<script>
+    document.querySelectorAll('.navbar-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
